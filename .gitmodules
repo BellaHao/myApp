@@ -1,0 +1,4 @@
+[submodule "ClassTable/rn_common"]
+	path = ClassTable/rn_common
+	url = ssh://git@git.visionet.cn:20002/haoll/rn_common.git
+

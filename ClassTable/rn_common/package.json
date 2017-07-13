@@ -1,0 +1,42 @@
+{
+    "name": "rn_common",
+    "version": "0.0.1",
+    "description": "Components, Library & Util for Drone project.",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "Gu Xiaofeng",
+    "jest": {
+        "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+        "setupFiles": [
+            "<rootDir>/setupJest.js"
+        ],
+        "unmockedModulePathPatterns": [
+            "<rootDir>/node_modules",
+            "<rootDir>/EmptyModule.js",
+            "rn_common/utils/server",
+            "test_helper"
+        ],
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "jsx"
+        ],
+        "moduleNameMapper": {
+            "^.*[.](jpg|JPG|gif|GIF|png|PNG|less|LESS|css|CSS)$": "EmptyModule"
+        },
+        "collectCoverage": false
+    },
+    "dependencies": {
+        "color": "^2.0.0",
+        "react": "16.0.0-alpha.12",
+        "react-native": "0.46.2",
+        "react-native-extended-stylesheet": "^0.6.0"
+    },
+    "devDependencies": {
+        "babel-jest": "20.0.3",
+        "babel-preset-react-native": "2.1.0",
+        "jest": "20.0.4",
+        "react-test-renderer": "16.0.0-alpha.12"
+    }
+}
