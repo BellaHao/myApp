@@ -1,4 +1,3 @@
-[submodule "ClassTable/rn_common"]
-	path = ClassTable/rn_common
+[submodule "ClassTable/common"]
+	path = ClassTable/common
 	url = https://github.com/BellaHao/myApp-submodule.git
-
